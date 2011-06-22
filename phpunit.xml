@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<phpunit 
+	colors="true" 
+	bootstrap="application/unittest-bootstrap.php"
+    convertErrorsToExceptions="true"
+    convertNoticesToExceptions="true"
+    convertWarningsToExceptions="true"
+    stopOnError="false"
+    stopOnFailure="false"
+    stopOnIncomplete="false"
+    stopOnSkipped="false"
+    syntaxCheck="false">
+	<testsuites>
+		<testsuite name="Kohana Tests">
+			<file>modules/unittest/tests.php</file>
+		</testsuite>
+	</testsuites>
+	<groups>
+	  <include>
+	    <group>modules</group>
+	    <group>application</group>
+	    <group>kohana</group>
+	  </include>
+	  <exclude>
+
+	  </exclude>
+	</groups>
+	<php>
+	  <includePath>./:.</includePath>
+	  <server name="KOHANA_ENV" value="DEVELOPMENT"/>
+	  <server name="DISPLAY_ERRORS" value="On"/>
+	</php>
+</phpunit>
