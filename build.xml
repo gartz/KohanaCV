@@ -15,6 +15,7 @@
 		<echo message="==============="/>
 		<echo message="phing test              Run unit tests."/>
 		<echo message="phing test-log          Run unit tests with logging enabled."/>
+		<echo message="phing test-log-clover   Run unit tests with logging and clover enabled."/>
 		<echo message="phing phpcs             Run phpcs."/>
 		<echo message="phing phpcs-log         Run phpcs with logging enabled."/>
 		<echo message="phing phpmd             Run phpmd."/>
@@ -172,8 +173,13 @@
 		<exec command="phpunit --bootstrap=modules/unittest/bootstrap.php modules/unittest/tests.php" checkreturn="true" passthru="true"/>
 	</target>
 
-	<!-- Run unit tests and generate junit.xml and clover.xml -->
+	<!-- Run unit tests and generate junit.xml -->
 	<target name="test-log">
+		<exec command="phpunit --bootstrap=modules/unittest/bootstrap.php --log-junit=${builddir}/logs/junit.xml" checkreturn="true" passthru="true"/>
+	</target>
+
+	<!-- Run unit tests and genereta junit.xml and clover.xml -->
+	<target name="test-log-clover"> 
 		<exec command="phpunit --bootstrap=modules/unittest/bootstrap.php --coverage-html=${builddir}/coverage --log-junit=${builddir}/logs/junit.xml --coverage-clover=${builddir}/logs/clover.xml modules/unittest/tests.php" checkreturn="true" passthru="true"/>
 	</target>
 
