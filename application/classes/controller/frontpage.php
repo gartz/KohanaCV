@@ -4,7 +4,8 @@ class Controller_Frontpage extends Controller {
 
 	public function action_index()
 	{
-		$this->response->body('hello, gartz!');
+		
+		$this->response->body(View::factory('html/static/2011-1_curriculum_english_resume'));
 	}
 
 } // End Frontpage
