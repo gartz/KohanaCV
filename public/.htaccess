@@ -1,3 +1,10 @@
+# Enable development in localhost and internal lan server
+SetEnvIf Server_Addr "127.0.0.1" KOHANA_ENV=DEVELOPMENT
+
+# Enable display errors in localhost and internal lan server
+SetEnvIf Server_Addr "127.0.0.1" DISPLAY_ERRORS=TRUE
+
+
 # Turn on URL rewriting
 RewriteEngine On
 
