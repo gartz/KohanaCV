@@ -107,9 +107,21 @@ Kohana::modules(array(
 	// 'database'   => MODPATH.'database',   // Database access
 	// 'image'      => MODPATH.'image',      // Image manipulation
 	// 'orm'        => MODPATH.'orm',        // Object Relationship Mapping
-	// 'unittest'   => MODPATH.'unittest',   // Unit testing
-	// 'userguide'  => MODPATH.'userguide',  // User guide and API documentation
 	));
+
+/**
+ * Developer modules. Only enabled when in development environment.
+ */
+if (Kohana::$environment === Kohana::DEVELOPMENT || Kohana::$is_cli)
+{
+        Kohana::modules(array(
+//                         'devtools'           => MODPATH.'devtools',           // Devtools for helping debug routes on kohana 
+//                         'profiler'           => MODPATH.'attach-profiler',    // Profiler controller helper - controller+route
+                        'codebench'          => MODPATH.'codebench',          // Benchmarking tool
+                        'unittest'           => MODPATH.'unittest',           // Unit testing
+                        'userguide'          => MODPATH.'userguide',          // User guide and API documentation
+                ) + Kohana::modules()); // Reloads the default modules
+}
 
 /**
  * Set the routes. Each route must have a minimum of a name, a URI and a set of
