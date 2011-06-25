@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <phpunit 
 	colors="true" 
-	bootstrap="application/unittest-bootstrap.php"
+	bootstrap="unittest-bootstrap.php"
     convertErrorsToExceptions="true"
     convertNoticesToExceptions="true"
     convertWarningsToExceptions="true"
@@ -12,7 +12,7 @@
     syntaxCheck="false">
 	<testsuites>
 		<testsuite name="Kohana Tests">
-			<file>modules/unittest/tests.php</file>
+			<file>../modules/unittest/tests.php</file>
 		</testsuite>
 	</testsuites>
 	<groups>
