@@ -51,7 +51,7 @@
 		#menu a>li:hover { background-color: #efff00; }
 		#menu a>li:active { background-color: #efff00; margin: 3px; box-shadow: 0px 0px 0px #666666; }
 	}
-	@media print 
+	@media print,handheld
 	{
 		#menu { display: none; }
 		body { margin: 0px; }
