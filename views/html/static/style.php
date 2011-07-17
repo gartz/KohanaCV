@@ -11,10 +11,10 @@ li span. { clear: both; line-height:0; width:0; height:0; margin:0; padding:0; }
 span.footnodeNumber { padding-right:1em; }
 span.annotation_style_by_filter { font-size:95%; font-family:Arial; background-color:#fff000;  margin:0; border:0; padding:0;  }
 * { margin:0;}
-.Heading_20_1 { color:#345a8a; font-size:16pt; font-family:Calibri; writing-mode:lr-tb; margin-top:0.3335in; margin-bottom:0in; font-weight:bold; }
+.Heading_20_1 { color:#345a8a; font-size:16pt; font-family:Calibri; writing-mode:lr-tb; margin-top:0.3335in; font-weight:bold; }
 .P1 { color:#00000a; font-size:12pt; font-family:Liberation Serif; writing-mode:lr-tb; }
 .P2 { color:#00000a; font-size:12pt; font-family:Liberation Serif; writing-mode:lr-tb; text-align:right ! important; }
-.P3 { color:#00000a; font-size:12pt; font-family:Liberation Serif; writing-mode:lr-tb; margin-left:0.5in; margin-right:0in; text-indent:0in; }
+.P3 { color:#00000a; font-size:12pt; font-family:Liberation Serif; writing-mode:lr-tb; margin-bottom:19px; text-indent:0in; }
 .P4 { color:#000000; font-size:12pt; font-style:italic; font-family:Liberation Serif; writing-mode:lr-tb; margin-left:2.7563in; margin-right:0in; text-indent:0in; }
 .P5_borderStart { border-left-style:none; border-right-style:none; border-top-style:none; color:#17365d; font-size:26pt; font-weight:bold; letter-spacing:0.0035in; margin-top:0in; padding:0in; text-align:center ! important; font-family:Calibri; writing-mode:lr-tb; padding-bottom:0.2083in;  border-bottom-style:none; }
 .P5 { border-left-style:none; border-right-style:none; color:#17365d; font-size:26pt; font-weight:bold; letter-spacing:0.0035in; padding:0in; text-align:center ! important; font-family:Calibri; writing-mode:lr-tb; padding-bottom:0.2083in; padding-top:0in;  border-top-style:none; border-bottom-style:none; }

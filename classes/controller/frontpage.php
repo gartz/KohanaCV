@@ -42,14 +42,16 @@ class Controller_Frontpage extends Controller {
 		$menu = View::factory('html/dynamic/menu')
 			->set('groups', Kohana::config('menu'));
 		// Add menu into content and load static curriculum
-		$this->content = $menu.View::factory('html/static/2011-1_curriculum_english_resume');
+		$this->content = $menu.View::factory('html/dynamic/resume')
+			->set('experiences', Kohana::config('curriculum.experiences'));
 		
 	}
 
 	public function action_printable()
 	{
 		// Load static curriculum into content
-		$this->content = View::factory('html/static/2011-1_curriculum_english_resume');
+		$this->content = View::factory('html/dynamic/resume')
+			->set('experiences', Kohana::config('curriculum.experiences'));
 	}
 
 } // End Frontpage
