@@ -43,19 +43,19 @@ if (!defined('K_TCPDF_EXTERNAL_CONFIG')) {
 	}
 
 	// Automatic calculation for the following K_PATH_MAIN constant
-	$k_path_main = str_replace( '\\', '/', realpath(substr(dirname(__FILE__), 0, 0-strlen('config'))));
-	if (substr($k_path_main, -1) != '/') {
-		$k_path_main .= '/';
-	}
+// 	$k_path_main = str_replace( '\\', '/', realpath(substr(dirname(__FILE__), 0, 0-strlen('config'))));
+// 	if (substr($k_path_main, -1) != '/') {
+// 		$k_path_main .= '/';
+// 	}
 
 	/**
 	 * Installation path (/var/www/tcpdf/).
 	 * By default it is automatically calculated but you can also set it as a fixed string to improve performances.
 	 */
-	define ('K_PATH_MAIN', $k_path_main);
+	define ('K_PATH_MAIN', str_replace('tcpdf.php','',Kohana::find_file('vendor', 'tcpdf/tcpdf')) );
 
 	// Automatic calculation for the following K_PATH_URL constant
-	$k_path_url = $k_path_main; // default value for console mode
+	$k_path_url = K_PATH_MAIN; // default value for console mode
 	if (isset($_SERVER['HTTP_HOST']) AND (!empty($_SERVER['HTTP_HOST']))) {
 		if(isset($_SERVER['HTTPS']) AND (!empty($_SERVER['HTTPS'])) AND strtolower($_SERVER['HTTPS'])!='off') {
 			$k_path_url = 'https://';
