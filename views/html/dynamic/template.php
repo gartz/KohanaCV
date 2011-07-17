@@ -12,6 +12,7 @@
 -->
 <html xmlns="http://www.w3.org/1999/xhtml"><!--This file was converted to xhtml by OpenOffice.org - see http://xml.openoffice.org/odf2xhtml for more info.--><head profile="http://dublincore.org/documents/dcmi-terms/"><meta http-equiv="Content-Type" content="application/xhtml+xml; charset=utf-8"/><title xml:lang="en-US">Giannattasio, Gabriel Reitz - CV Resume</title><meta name="DCTERMS.title" content="" xml:lang="en-US"/><meta name="DCTERMS.language" content="en-US" scheme="DCTERMS.RFC4646"/><meta name="DCTERMS.source" content="http://xml.openoffice.org/odf2xhtml"/><meta name="DCTERMS.creator" content="Gabriel Giannattasio"/><meta name="DCTERMS.issued" content="2011-01-23T17:03:00" scheme="DCTERMS.W3CDTF"/><meta name="DCTERMS.contributor" content="Gabriel Giannattasio"/><meta name="DCTERMS.modified" content="2011-01-23T23:32:00" scheme="DCTERMS.W3CDTF"/><meta name="DCTERMS.provenance" content="" xml:lang="en-US"/><meta name="DCTERMS.subject" content="," xml:lang="en-US"/><link rel="schema.DC" href="http://purl.org/dc/elements/1.1/" hreflang="en"/><link rel="schema.DCTERMS" href="http://purl.org/dc/terms/" hreflang="en"/><link rel="schema.DCTYPE" href="http://purl.org/dc/dcmitype/" hreflang="en"/><link rel="schema.DCAM" href="http://purl.org/dc/dcam/" hreflang="en"/><base href="."/><style type="text/css">
 	@page {  }
+	body { max-width:8.5in;margin-top:1in; margin-bottom:1in; margin-left:1.25in; margin-right:1.25in; }
 	table { border-collapse:collapse; border-spacing:0; empty-cells:show }
 	td, th { vertical-align:top; font-size:12pt;}
 	h1, h2, h3, h4, h5, h6 { clear:both }
@@ -40,4 +41,4 @@
 	.T5 { color:#000000; font-family:Helvetica; font-style:italic; }
 	<!-- ODF styles with no properties representable as CSS -->
 	.ListLabel_20_1 .ListLabel_20_2 .ListLabel_20_3 .T1 { }
-	</style></head><body dir="ltr" style="max-width:8.5in;margin-top:1in; margin-bottom:1in; margin-left:1.25in; margin-right:1.25in; "><?php echo $content ?></body></html>
+	</style></head><body dir="ltr"><?php echo $content ?></body></html>
