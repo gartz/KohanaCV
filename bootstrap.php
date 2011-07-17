@@ -84,7 +84,7 @@ else {
  * - boolean  caching     enable or disable internal caching                 FALSE
  */
 Kohana::init(array(
-	'base_url'   => 'http://curriculum.gartz.com.br/',
+	'base_url'   => (Kohana::$environment === Kohana::DEVELOPMENT)?'/':'http://curriculum.gartz.com.br/',
         'index_file' => FALSE,
         'errors'     => Kohana::$environment === Kohana::DEVELOPMENT,
         'profile'    => Kohana::$environment === Kohana::DEVELOPMENT,
@@ -133,13 +133,13 @@ if (Kohana::$environment === Kohana::DEVELOPMENT || Kohana::$is_cli)
  */
 Route::set('resume', '<action>',
 	array(
-		'action' => '(index|printable)'
+		'action' => '(index|printable|name)'
 	))
 	->defaults(array(
 		'controller' => 'resume',
 		'action'     => 'index',
 	));
-Route::set('export', 'GabrielReitzGiannattasio-CV-Resume.<action>')
+Route::set('export', preg_replace('/\s+/', '', Kohana::config('resume.author')).'-CV.<action>')
 	->defaults(array(
 		'controller' => 'export',
 		'action'     => 'pdf',

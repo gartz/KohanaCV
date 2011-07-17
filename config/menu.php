@@ -33,7 +33,7 @@ return array(
 		"buttons" => array(
 			array(
 				"label" => "PDF",
-				"url"   => "/GabrielReitzGiannattasio-CV-Resume.pdf",
+				"url"   => Kohana::$base_url.preg_replace('/\s+/', '', Kohana::config('resume.author')).'-CV.pdf',
 				"target" => "",
 			)
 		)

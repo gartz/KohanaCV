@@ -1,8 +1,6 @@
 <?php defined('SYSPATH') or die('No direct script access.');
 return array(
-	"first_name" => "Gabriel",
-	"midle_name" => "Reitz",
-	"last_name"  => "Giannattasio",
+	"author" => "Gabriel Reitz Giannattasio",
 	"experiences" => array(
 		array(
 			"company"     => "Intuicom",

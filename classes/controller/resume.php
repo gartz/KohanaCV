@@ -17,6 +17,16 @@ class Controller_Resume extends Controller {
 	 */
 	protected $content;
 
+	//TODO: move this outside the controller
+	protected function begin_with_last_name($name)
+	{
+		$name_array = explode(" ", $name);
+		$name = array_pop($name_array).", ";
+		$name .= implode(" ",$name_array);
+		return $name;
+
+	}
+
 	public function before()
 	{
 		// Exit if auto_template is disabled
@@ -43,7 +53,7 @@ class Controller_Resume extends Controller {
 			->set('groups', Kohana::config('menu'));
 		// Add menu into content and load static curriculum
 		$this->content = $menu.View::factory('html/dynamic/resume')
-			->set('full_name', Kohana::config('resume.last_name').', '.Kohana::config('resume.first_name').' '.Kohana::config('resume.midle_name'))
+			->set('author', $this->begin_with_last_name(Kohana::config('resume.author')))
 			->set('experiences', Kohana::config('resume.experiences'));
 		
 	}
@@ -52,8 +62,14 @@ class Controller_Resume extends Controller {
 	{
 		// Load static curriculum into content
 		$this->content = View::factory('html/dynamic/resume')
-			->set('full_name', Kohana::config('resume.last_name').', '.Kohana::config('resume.first_name').' '.Kohana::config('resume.midle_name'))
+			->set('author', $this->begin_with_last_name(Kohana::config('resume.author')))
 			->set('experiences', Kohana::config('resume.experiences'));
+	}
+
+	public function action_name()
+	{
+		$this->auto_template = FALSE;
+		$this->response->body(Kohana::config('resume.author'));
 	}
 
 } // End resume
