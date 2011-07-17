@@ -12,6 +12,11 @@ class Controller_Frontpage extends Controller {
 	 */
 	protected $template;
 
+	/**
+	 * @var string  template default content
+	 */
+	protected $content;
+
 	public function before()
 	{
 		// Exit if auto_template is disabled
@@ -19,7 +24,7 @@ class Controller_Frontpage extends Controller {
 
 		// Set the default template file
 		$this->template = View::factory('html/dynamic/template')
-			->set('content', NULL);
+			->bind('content', $this->content);
 	}
 
 	public function after()
@@ -32,15 +37,18 @@ class Controller_Frontpage extends Controller {
 
 	public function action_index()
 	{
-		// Load dynamic menu and static curriculum into template
-		$this->template->set('content',View::factory('html/static/2011-1_curriculum_english_resume'));
+		// Load menu
+		$menu = View::factory('html/dynamic/menu')
+			->set('options', array());
+		// Add menu into content and load static curriculum
+		$this->content = $menu.View::factory('html/static/2011-1_curriculum_english_resume');
 		
 	}
 
 	public function action_printable()
 	{
-		// Load static curriculum into template
-		$this->template->set('content',View::factory('html/static/2011-1_curriculum_english_resume'));
+		// Load static curriculum into content
+		$this->content = View::factory('html/static/2011-1_curriculum_english_resume');
 	}
 
 } // End Frontpage
