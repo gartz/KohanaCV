@@ -1,16 +1,14 @@
 <?php defined('SYSPATH') or die('No direct script access.'); ?>
 
 <h1><p class="P5"><span class="T1"><?=$author?></span></p></h1><p class="Subtitle">2011/2</p>
+<?php if(isset($informations)) { ?>
 <h2 class="Heading_20_1"><a id="a__Personal_Information"><span/></a><span class="T1">Personal Information</span></h2>
 <ul>
-	<li><span class="T2">Marital status: Single </span></li>
-	<li><span class="T2">Date of birth: 08/03/1986 – 24 yeas old </span></li>
-	<li><span class="T2">Birthplace: Florianópolis - SC </span></li>
-	<li><span class="T2">Residence: Pantanal – Florianópolis - SC </span></li>
-	<li><span class="T2">Email/gtalk: gabriel@loadin.com.br </span></li>
-	<li><span class="T2">Phone #: +55 (48) 8415-3555 </span></li>
-	<li><span class="T2">For knowledge, I'm available to travel, have good logic and easy assimilation.</span></li>
+	<?php foreach($informations as $info) { ?>
+	<li><span class="T2"><?=$info?></span></li>
+	<?php } // end foreach informations ?>
 </ul>
+<?php } // end informations ?>
 <span class="T2"/></p><br><p class="P4"><span class="T1">“I'm looking for a fixer-upper with a solid foundation. Am willing to tear down walls, build bridges, and light fires. I have great experience, lots of energy, a bit of that 'vision thing' and I'm not afraid to start from the beginning.”</span></p><p class="P2">- Steve Jobs</p>
 <h2 class="Heading_20_1"><a id="a__Education_and_Training"><span/></a><span class="T1">Education and Training</span></h2>
 <ul>
@@ -28,7 +26,7 @@
 	<?php foreach($experiences as $experience) { ?>
 		<ul><li style="list-style: disc outside none; margin-left:1.27cm;"><span class="T4"><?=$experience['company']?> (<?=$experience['position']?> – <?=$experience['year']?>)</span><p class="P3"><span class="T2"><?=$experience['description']?></span></p></li></ul>
 	<?php } // end foreach experiences ?>
-<?php } // end if isset experience ?>
+<?php } // end experiences ?>
 <h2 class="Heading_20_1"><a id="a__Technology_Knowhow_and_Experience"><span/></a><span class="T1">Technology Knowhow and Experience</span></h2>
 <ul>
 	<li><span class="T2">Servers: Linux, BSD, Windows and OS X;</span></li>

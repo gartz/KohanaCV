@@ -1,6 +1,15 @@
 <?php defined('SYSPATH') or die('No direct script access.');
 return array(
 	"author" => "Gabriel Reitz Giannattasio",
+	"informations" => array(
+		"Marital status: Single",
+		"Date of birth: 08/03/1986 – 24 yeas old", //TODO: auto calculate years
+		"Birthplace: Florianópolis - SC - Brazil",
+		"Residence: Pantanal – Florianópolis - SC - Brazil",
+		"Email/gtalk: gabriel@loadin.com.br",
+		"Phone #: +55 (48) 8415-3555",
+		"For knowledge, I'm available to travel, have good logic and easy assimilation.",
+	),
 	"experiences" => array(
 		array(
 			"company"     => "Fleep.me",

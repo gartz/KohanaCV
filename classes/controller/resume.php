@@ -54,6 +54,7 @@ class Controller_Resume extends Controller {
 		// Add menu into content and load static curriculum
 		$this->content = $menu.View::factory('html/dynamic/resume')
 			->set('author', $this->begin_with_last_name(Kohana::config('resume.author')))
+			->set('informations', Kohana::config('resume.informations'))
 			->set('experiences', Kohana::config('resume.experiences'));
 		
 	}
@@ -63,6 +64,7 @@ class Controller_Resume extends Controller {
 		// Load static curriculum into content
 		$this->content = View::factory('html/dynamic/resume')
 			->set('author', $this->begin_with_last_name(Kohana::config('resume.author')))
+			->set('informations', Kohana::config('resume.informations'))
 			->set('experiences', Kohana::config('resume.experiences'));
 	}
 
