@@ -127,7 +127,15 @@ if (Kohana::$environment === Kohana::DEVELOPMENT || Kohana::$is_cli)
  * Set the routes. Each route must have a minimum of a name, a URI and a set of
  * defaults for the URI.
  */
-Route::set('default', '(<action>)')
+Route::set('frontpage', '<action>',
+	array(
+		'action' => '(index|printable)'
+	))
+	->defaults(array(
+		'controller' => 'frontpage',
+		'action'     => 'index',
+	));
+Route::set('default', '(<controller>(/<action>(/<id>)))')
 	->defaults(array(
 		'controller' => 'frontpage',
 		'action'     => 'index',
