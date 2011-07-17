@@ -52,12 +52,12 @@
 		#menu a>li:hover { background-color: #efff00; }
 		#menu a>li:active { background-color: #efff00; margin: 3px; box-shadow: 0px 0px 0px #666666; }
 	}
-	@media (max-width:750px)
+	@media handheld, (max-width:750px)
 	{
 		#menu { display: none; }
 		body { margin: 10px; }
 	}
-	@media print,handheld
+	@media print
 	{
 		#menu { display: none; }
 		body { margin: 0px; }
