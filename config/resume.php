@@ -3,6 +3,12 @@ return array(
 	"author" => "Gabriel Reitz Giannattasio",
 	"experiences" => array(
 		array(
+			"company"     => "Fleep.me",
+			"position"    => "System Annalist",
+			"year"        => "2011",
+			"description" => "PHP social network project, arquitect the project and work on implementation. This project I have chose Kohana Framework 3.1 with HMVC, with focus on TDD to work with rolling releases using CI for ensure the project quality and distributed servers. Maintained and implemented the development server and produticion server and it patterns, integrated VPN (development restricted access for the production server), GIT (for SCM), Redmine (project management) and Hudson (CI).",
+		),
+		array(
 			"company"     => "Intuicom",
 			"position"    => "Programmer",
 			"year"        => "2010 - 2011",
