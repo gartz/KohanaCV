@@ -41,8 +41,9 @@
 	.T5 { color:#000000; font-family:Helvetica; font-style:italic; }
 	<!-- ODF styles with no properties representable as CSS -->
 	.ListLabel_20_1 .ListLabel_20_2 .ListLabel_20_3 .T1 { }
-	@media screen
+	@media all
 	{
+		body { min-width: 600px; }
 		#menu { display: block; background-color: #999999; font: menu; left: 0; padding: 12px; position: fixed; top: 0; width: 100%; height: 25px; }
 		#menu>ul>li { margin: 6px; }
 		#menu a { text-decoration: none; }
@@ -50,6 +51,11 @@
 		#menu a>li { background-color: #cccccc; color: #000000; padding: 3px; text-align: center; width: 100px; border-radius: 10px 10px 10px 10px; box-shadow: 3px 3px 3px #666666; margin-right: 6px; }
 		#menu a>li:hover { background-color: #efff00; }
 		#menu a>li:active { background-color: #efff00; margin: 3px; box-shadow: 0px 0px 0px #666666; }
+	}
+	@media (max-width:750px)
+	{
+		#menu { display: none; }
+		body { margin: 10px; }
 	}
 	@media print,handheld
 	{
