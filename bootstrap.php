@@ -135,6 +135,11 @@ Route::set('frontpage', '<action>',
 		'controller' => 'frontpage',
 		'action'     => 'index',
 	));
+Route::set('export', 'GabrielReitzGiannattasio-CV-Resume.<action>')
+	->defaults(array(
+		'controller' => 'export',
+		'action'     => 'pdf',
+	));
 Route::set('default', '(<controller>(/<action>(/<id>)))')
 	->defaults(array(
 		'controller' => 'frontpage',

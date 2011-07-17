@@ -27,15 +27,15 @@ return array(
 			)
 		)
 	),
-// 	"export" => array(
-// 		"label" => "Export as:",
-// 		"url"   => "",
-// 		"buttons" => array(
-// 			array(
-// 				"label" => "PDF",
-// 				"url"   => "export-as-pdf",
-// 				"target" => "_blank",
-// 			)
-// 		)
-// 	)
+	"export" => array(
+		"label" => "Export as:",
+		"url"   => "",
+		"buttons" => array(
+			array(
+				"label" => "PDF",
+				"url"   => "/GabrielReitzGiannattasio-CV-Resume.pdf",
+				"target" => "",
+			)
+		)
+	)
 );
