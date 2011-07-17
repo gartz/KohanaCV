@@ -12,10 +12,10 @@ class Controller_Export extends Controller {
 
 		// set document information
 		$pdf->SetCreator(PDF_CREATOR);
-		$pdf->SetAuthor('Gabriel Reitz Giannattasio');
+		$pdf->SetAuthor(Kohana::config('resume.author'));
 		$pdf->SetTitle('Curriculum Vitae - Resume');
-		$pdf->SetSubject('Gabriel Reitz Giannattasio - Curriculum Vitae - Resume');
-		$pdf->SetKeywords('gabriel, reitz, giannattasio, curriculum, vitae, resume, cv');
+		$pdf->SetSubject(Kohana::config('resume.author').' - Curriculum Vitae - Resume');
+		$pdf->SetKeywords(str_replace(" ", ", ", strtolower(Kohana::config('resume.author'))).', curriculum, vitae, resume, cv');
 
 		// remove default header
 		$pdf->setPrintHeader(FALSE);
@@ -58,7 +58,7 @@ class Controller_Export extends Controller {
 		// Close and output PDF document
 		// This method has several options, check the source code documentation for more information.
 		$this->response->headers("Content-Type", "application/pdf");
-		$this->response->body($pdf->Output('resume.pdf', 'S'));
+		$this->response->body($pdf->Output(preg_replace('/\s+/', '', Kohana::config('resume.author')).'-CV.pdf', 'S'));
 
 		//============================================================+
 		// END OF FILE
