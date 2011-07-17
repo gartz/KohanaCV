@@ -1,3 +1,4 @@
+<?php defined('SYSPATH') or die('No direct script access.'); ?>
 <xml version="1.0" encoding="UTF-8">
 <!DOCTYPE html
   PUBLIC "-//W3C//DTD XHTML 1.1 plus MathML 2.0//EN" "http://www.w3.org/TR/MathML2/dtd/xhtml-math11-f.dtd">
