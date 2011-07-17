@@ -4,8 +4,10 @@ class Controller_Frontpage extends Controller {
 
 	public function action_index()
 	{
-		
-		$this->response->body(View::factory('html/static/2011-1_curriculum_english_resume'));
+		// Load static curriculum into template
+		$template = View::factory('html/dynamic/template')
+			->set('content',View::factory('html/static/2011-1_curriculum_english_resume'));
+		$this->response->body($template);
 	}
 
 } // End Frontpage
