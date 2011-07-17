@@ -8,7 +8,7 @@ class Controller_Export extends Controller {
 		require_once(Kohana::find_file('vendor', 'tcpdf/config/lang/eng'));
 
 		// create new PDF document
-		$pdf = new TCPDF(PDF_PAGE_ORIENTATION, PDF_UNIT, PDF_PAGE_FORMAT, true, 'UTF-8', false);
+		$pdf = new TCPDF(PDF_PAGE_ORIENTATION, PDF_UNIT, PDF_PAGE_FORMAT, TRUE, 'UTF-8', FALSE);
 
 		// set document information
 		$pdf->SetCreator(PDF_CREATOR);
@@ -18,7 +18,7 @@ class Controller_Export extends Controller {
 		$pdf->SetKeywords('gabriel, reitz, giannattasio, curriculum, vitae, resume, cv');
 
 		// remove default header
-		$pdf->setPrintHeader(false);
+		$pdf->setPrintHeader(FALSE);
 
 		// set footer font
 		$pdf->setFooterFont(Array(PDF_FONT_NAME_DATA, '', PDF_FONT_SIZE_DATA));

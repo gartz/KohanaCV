@@ -24,6 +24,7 @@ class Controller_Frontpage extends Controller {
 
 		// Set the default template file
 		$this->template = View::factory('html/dynamic/template')
+			->set('style', View::factory('html/static/style'))
 			->bind('content', $this->content);
 	}
 
