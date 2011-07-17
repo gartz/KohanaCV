@@ -22,7 +22,9 @@
 	    <group>kohana</group>
 	  </include>
 	  <exclude>
-
+	    <group>kohana.route</group>
+	    <group>kohana.request</group>
+	    <group>kohana.url</group>
 	  </exclude>
 	</groups>
 	<php>

@@ -80,7 +80,7 @@ if (isset($_SERVER['KOHANA_ENV']))
  * - boolean  caching     enable or disable internal caching                 FALSE
  */
 Kohana::init(array(
-	'base_url'   => '/',
+	'base_url'   => 'http://curriculum.gartz.com.br/',
         'index_file' => FALSE,
         'errors'     => Kohana::$environment === Kohana::DEVELOPMENT,
         'profile'    => Kohana::$environment === Kohana::DEVELOPMENT,
