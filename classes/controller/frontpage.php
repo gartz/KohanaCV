@@ -39,7 +39,7 @@ class Controller_Frontpage extends Controller {
 	{
 		// Load menu
 		$menu = View::factory('html/dynamic/menu')
-			->set('buttons', Kohana::config('menu.tools.buttons'));
+			->set('groups', Kohana::config('menu'));
 		// Add menu into content and load static curriculum
 		$this->content = $menu.View::factory('html/static/2011-1_curriculum_english_resume');
 		

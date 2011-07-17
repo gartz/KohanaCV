@@ -1,33 +1,41 @@
 <?php defined('SYSPATH') or die('No direct script access.');
 return array(
 	"project" => array(
-		"label" => "",
+		"label" => "Project:",
 		"url"   => "",
 		"buttons" => array(
 			array(
-				"label" => "Roadmap",
-				"url"   => "http://projetos.gartz.com.br/projects/curriculum/roadmap",
-			)
+				"label"  => "Overview",
+				"url"    => "http://projetos.gartz.com.br/projects/curriculum",
+				"target" => "_blank",
+			),
+			array(
+				"label"  => "Roadmap",
+				"url"    => "http://projetos.gartz.com.br/projects/curriculum/roadmap",
+				"target" => "_blank",
+			),
 		)
 	),
 	"tools" => array(
-		"label" => "",
+		"label" => "File:",
 		"url"   => "",
 		"buttons" => array(
 			array(
-				"label" => "Print the CV",
+				"label" => "Print",
 				"url"   => "javascript: print();",
+				"target" => "",
 			)
 		)
 	),
-	"export" => array(
-		"label" => "Export as",
-		"url"   => "",
-		"buttons" => array(
-			array(
-				"label" => "PDF",
-				"url"   => "export-as-pdf",
-			)
-		)
-	)
+// 	"export" => array(
+// 		"label" => "Export as:",
+// 		"url"   => "",
+// 		"buttons" => array(
+// 			array(
+// 				"label" => "PDF",
+// 				"url"   => "export-as-pdf",
+// 				"target" => "_blank",
+// 			)
+// 		)
+// 	)
 );
