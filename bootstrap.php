@@ -65,7 +65,8 @@ if (isset($_SERVER['KOHANA_ENV']))
 {
 	Kohana::$environment = constant('Kohana::'.strtoupper($_SERVER['KOHANA_ENV']));
 }
-else {
+else 
+{
 	Kohana::$environment = Kohana::PRODUCTION;
 }
 
@@ -118,6 +119,7 @@ Kohana::modules(array(
  */
 if (Kohana::$environment === Kohana::DEVELOPMENT || Kohana::$is_cli)
 {
+	Kohana::$environment = Kohana::DEVELOPMENT;
         Kohana::modules(array(
                          'devtools'           => MODPATH.'devtools',           // Devtools for helping debug routes on kohana 
 //                         'profiler'           => MODPATH.'attach-profiler',    // Profiler controller helper - controller+route
