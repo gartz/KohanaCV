@@ -1,6 +1,6 @@
 <?php defined('SYSPATH') or die('No direct script access.');
 
-class Controller_Frontpage extends Controller {
+class Controller_Resume extends Controller {
 
 	/**
 	 * @var boolean  execute default template
@@ -43,7 +43,8 @@ class Controller_Frontpage extends Controller {
 			->set('groups', Kohana::config('menu'));
 		// Add menu into content and load static curriculum
 		$this->content = $menu.View::factory('html/dynamic/resume')
-			->set('experiences', Kohana::config('curriculum.experiences'));
+			->set('full_name', Kohana::config('resume.last_name').', '.Kohana::config('resume.first_name').' '.Kohana::config('resume.midle_name'))
+			->set('experiences', Kohana::config('resume.experiences'));
 		
 	}
 
@@ -51,7 +52,8 @@ class Controller_Frontpage extends Controller {
 	{
 		// Load static curriculum into content
 		$this->content = View::factory('html/dynamic/resume')
-			->set('experiences', Kohana::config('curriculum.experiences'));
+			->set('full_name', Kohana::config('resume.last_name').', '.Kohana::config('resume.first_name').' '.Kohana::config('resume.midle_name'))
+			->set('experiences', Kohana::config('resume.experiences'));
 	}
 
-} // End Frontpage
+} // End resume
