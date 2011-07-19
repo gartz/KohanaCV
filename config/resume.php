@@ -1,9 +1,19 @@
 <?php defined('SYSPATH') or die('No direct script access.');
 return array(
+	// Enable or disable application features, TRUE for enabled and FALSE for disabled.
+	"features" => array(
+		/* 
+		* If you have Google analytics account, you can enable this feature, just don't forget to
+		* update your view/features/google_analytics.php file, with your domain configurations.
+		*/
+		"google_analytics"         => TRUE,
+		"google_analytics_account" => "UA-24619548-1", // Your account ID like: UA-24619548-1
+		"google_analytics_domain"  => ".com.br"        // See your configurations in google analytics website
+	),
 	"author" => "Gabriel Reitz Giannattasio",
 	"informations" => array(
 		"Marital status: Single",
-		"Date of birth: 08/03/1986 – 24 yeas old", //TODO: auto calculate years
+		"Date of birth: 08/03/1986 – ".date_diff(date_create('1986-08-03'), date_create("now"))->format('%y yeas old'), //TODO: auto calculate years
 		"Birthplace: Florianópolis - SC - Brazil",
 		"Residence: Pantanal – Florianópolis - SC - Brazil",
 		"Email/gtalk: gabriel@loadin.com.br",

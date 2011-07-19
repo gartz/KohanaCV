@@ -27,6 +27,19 @@ class Controller_Resume extends Controller {
 
 	}
 
+	/**
+	 * Load google_analytics feature
+	 *
+	 * return string with template if feature is enabled or FALSE
+	 */
+	protected function google_analytics()
+	{
+		$config = Kohana::config('resume.features');
+		return ( ! $config['google_analytics']) ? FALSE :
+			View::factory('features/google_analytics')
+			->set("account", $config['google_analytics_account'])
+			->set("domain", $config['google_analytics_domain']);
+	}
 	public function before()
 	{
 		// Exit if auto_template is disabled
@@ -35,6 +48,7 @@ class Controller_Resume extends Controller {
 		// Set the default template file
 		$this->template = View::factory('html/dynamic/template')
 			->set('style', View::factory('html/static/style'))
+			->set('google_analytics', $this->google_analytics())
 			->bind('content', $this->content);
 	}
 
