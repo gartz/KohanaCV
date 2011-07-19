@@ -54,7 +54,12 @@ class Controller_Resume extends Controller {
 		$this->content = View::factory('html/dynamic/resume')
 			->set('author', $this->begin_with_last_name(Kohana::config('resume.author')))
 			->set('informations', Kohana::config('resume.informations'))
-			->set('experiences', Kohana::config('resume.experiences'));
+			->set('about_me', Kohana::config('resume.about_me'))
+			->set('educations', Kohana::config('resume.educations'))
+			->set('languages', Kohana::config('resume.languages'))
+			->set('experiences', Kohana::config('resume.experiences'))
+			->set('knowhows', Kohana::config('resume.knowhows'))
+			->set('references', Kohana::config('resume.references'));
 	}
 
 	public function after()

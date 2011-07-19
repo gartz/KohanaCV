@@ -20,6 +20,19 @@ return array(
 		"Phone #: +55 (48) 8415-3555",
 		"For knowledge, I'm available to travel, have good logic and easy assimilation.",
 	),
+	"about_me" => array(
+		"text" => "“I'm looking for a fixer-upper with a solid foundation. Am willing to tear down walls, build bridges, and light fires. I have great experience, lots of energy, a bit of that 'vision thing' and I'm not afraid to start from the beginning.”",
+		"author" => "- Steve Jobs",
+	),
+	"educations" => array(
+		"Studying Analysis and Development – SENAI",
+		"Acquire the second star in 5 Stars MSDN Developer certificate",
+	),
+	"languages" => array(
+		"English (good speaking)",
+		"Spanish (understand)",
+		"Portuguese - Brazil (native)",
+	),
 	"experiences" => array(
 		array(
 			"company"     => "Fleep.me",
@@ -57,5 +70,18 @@ return array(
 			"year"        => "2008",
 			"description" => "Work with analyses, installation/configuration of Windows server, ActiveDomain, bug fix, support and new implementations.",
 		),
+	),
+	"knowhows" => array(
+		"Servers: Linux, BSD, Windows and OS X;",
+		"Programming Languages: PHP (Advanced), HTML (Advanced), Javascript (Advanced), CSS (Advanced), Ruby, Python, Perl, ASP, Java (Basic), C (Basic), C++ (Basic), and some other;",
+		"Good knowledge of Hardwares and Infrastructures;",
+		"Personal project manager: <a href=\"http://projetos.gartz.com.br\">http://projetos.gartz.com.br</a>",
+		"OpenSource projects: <a href=\"https://github.com/gartz\">https://github.com/gartz</a>",
+		"Online CV - Resume: <a href=\"http://curriculum.gartz.com.br\">http://curriculum.gartz.com.br</a>",
+	),
+	"references" => array(
+		"André Sá – <i>Dventure Group CEO</i> – +55 (48) 8827-7078",
+		"Ricardo Fritsche – <i>Meritt CEO</i> – +55 (48) 8421-1133",
+		"Carlos Aguiar – <i>Intuicom TI Manager</i> – +55 (48) 7811-5050",
 	),
 );
