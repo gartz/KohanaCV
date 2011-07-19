@@ -21,9 +21,8 @@ class Controller_Resume extends Controller {
 	protected function begin_with_last_name($name)
 	{
 		$name_array = explode(" ", $name);
-		$name = array_pop($name_array).", ";
-		$name .= implode(" ",$name_array);
-		return $name;
+		// Move last name to string's begin and implode the array in the string
+		return array_pop($name_array).", ".implode(" ",$name_array);
 
 	}
 
