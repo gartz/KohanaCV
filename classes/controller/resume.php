@@ -50,6 +50,12 @@ class Controller_Resume extends Controller {
 			->set('style', View::factory('html/static/style'))
 			->set('google_analytics', $this->google_analytics())
 			->bind('content', $this->content);
+
+		// Load default content dynamic html resume
+		$this->content = View::factory('html/dynamic/resume')
+			->set('author', $this->begin_with_last_name(Kohana::config('resume.author')))
+			->set('informations', Kohana::config('resume.informations'))
+			->set('experiences', Kohana::config('resume.experiences'));
 	}
 
 	public function after()
@@ -62,24 +68,18 @@ class Controller_Resume extends Controller {
 
 	public function action_index()
 	{
-		// Load menu
+		// Preppend menu to content
 		$menu = View::factory('html/dynamic/menu')
 			->set('groups', Kohana::config('menu'));
 		// Add menu into content and load static curriculum
-		$this->content = $menu.View::factory('html/dynamic/resume')
-			->set('author', $this->begin_with_last_name(Kohana::config('resume.author')))
-			->set('informations', Kohana::config('resume.informations'))
-			->set('experiences', Kohana::config('resume.experiences'));
+		$this->content = $menu.$this->content;
 		
 	}
 
 	public function action_printable()
 	{
-		// Load static curriculum into content
-		$this->content = View::factory('html/dynamic/resume')
-			->set('author', $this->begin_with_last_name(Kohana::config('resume.author')))
-			->set('informations', Kohana::config('resume.informations'))
-			->set('experiences', Kohana::config('resume.experiences'));
+		// Just return the default template with default content
+		return;
 	}
 
 	public function action_name()
