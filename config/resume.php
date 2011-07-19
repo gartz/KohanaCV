@@ -8,7 +8,7 @@ return array(
 		*/
 		"google_analytics"         => TRUE,
 		"google_analytics_account" => "UA-24619548-1", // Your account ID like: UA-24619548-1
-		"google_analytics_domain"  => ".com.br"        // See your configurations in google analytics website
+		"google_analytics_domain"  => ".gartz.com.br"        // See your configurations in google analytics website
 	),
 	"author" => "Gabriel Reitz Giannattasio",
 	"informations" => array(
