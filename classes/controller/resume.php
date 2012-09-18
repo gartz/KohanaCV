@@ -53,6 +53,7 @@ class Controller_Resume extends Controller {
 		// Load default content dynamic html resume
 		$this->content = View::factory('html/dynamic/resume')
 			->set('author', $this->begin_with_last_name(Kohana::config('resume.author')))
+			->set('last_update', Kohana::config('resume.last_update'))
 			->set('informations', Kohana::config('resume.informations'))
 			->set('about_me', Kohana::config('resume.about_me'))
 			->set('educations', Kohana::config('resume.educations'))

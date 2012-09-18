@@ -1,17 +1,17 @@
-<?php defined('SYSPATH') or die('No direct script access.'); ?>
+	<?php defined('SYSPATH') or die('No direct script access.'); ?>
 
-<h1><p class="P5"><span class="T1"><?=$author?></span></p></h1><p class="Subtitle">2011/2</p>
-<?php if(isset($informations)) { ?>
-<h2 class="Heading_20_1"><a id="a__Personal_Information"><span/></a><span class="T1">Personal Information</span></h2>
-<ul>
-	<?php foreach($informations as $info) { ?>
-	<li><span class="T2"><?=$info?></span></li>
-	<?php } // end foreach informations ?>
-</ul>
-<?php } // end informations ?>
-<br>
-<?php if(isset($about_me)) { ?>
-<p class="P4"><span class="T1"><?=$about_me['text']?></span></p><p class="P2"><?=$about_me['author']?></p>
+	<h1><p class="P5"><span class="T1"><?=$author?></span></p></h1><p class="Subtitle"><?=$last_update?></p>
+	<?php if(isset($informations)) { ?>
+	<h2 class="Heading_20_1"><a id="a__Personal_Information"><span/></a><span class="T1">Personal Information</span></h2>
+	<ul>
+		<?php foreach($informations as $info) { ?>
+		<li><span class="T2"><?=$info?></span></li>
+		<?php } // end foreach informations ?>
+	</ul>
+	<?php } // end informations ?>
+	<br>
+	<?php if(isset($about_me)) { ?>
+	<p class="P4"><span class="T1"><?=$about_me['text']?></span></p><p class="P2"><?=$about_me['author']?></p>
 <?php } // end about_me ?>
 <?php if(isset($educations)) { ?>
 <h2 class="Heading_20_1"><a id="a__Education_and_Training"><span/></a><span class="T1">Education and Training</span></h2>
