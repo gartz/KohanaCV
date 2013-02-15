@@ -76,8 +76,12 @@ class Controller_Resume extends Controller {
 		// Preppend menu to content
 		$menu = View::factory('html/dynamic/menu')
 			->set('groups', Kohana::config('menu'));
+
+		// Add view of stackoverflow template
+		$stackoverflow = View::factory('html/static/stackoverflow');
+
 		// Add menu into content and load static curriculum
-		$this->content = $menu.$this->content;
+		$this->content = $menu.$this->content.$stackoverflow;
 		
 	}
 

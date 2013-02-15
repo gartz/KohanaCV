@@ -50,4 +50,10 @@ span.annotation_style_by_filter { font-size:95%; font-family:Arial; background-c
       #menu { display: none; }
       body { margin: 0px; }
 }
+
+.stackoverflow {
+    float: right;
+    top: -80px;
+    position: relative;
+}
 </style>
