@@ -7,8 +7,8 @@ return array(
 		* update your view/features/google_analytics.php file, with your domain configurations.
 		*/
 		"google_analytics"         => TRUE,
-		"google_analytics_account" => "UA-24619548-1", // Your account ID like: UA-24619548-1
-		"google_analytics_domain"  => ".gartz.com.br"        // See your configurations in google analytics website
+		"google_analytics_account" => "UA-24619548-3", // Your account ID like: UA-24619548-1
+		"google_analytics_domain"  => "gartz.com.br"        // See your configurations in google analytics website
 	),
 	"author" => "Gabriel Reitz Giannattasio",
 	"last_update" => "2012/2",
@@ -85,7 +85,7 @@ return array(
 		"Programmer since 13 years old",
 		"I like VI and the new IDE's webapps, like Cloud9",
 		"I'm not Windows friendly, it doesn't have threads, only process forks, is that realy an OS?!?",
-		"Personal project manager: <a href=\"http://projetos.gartz.com.br\">http://projetos.gartz.com.br</a>",
+		"Personal BLOG: <a href=\"http://gartz.com.br\">http://gartz.com.br</a>",
 		"OpenSource projects: <a href=\"https://github.com/gartz\">https://github.com/gartz</a>",
 		"Online CV - Resume: <a href=\"http://curriculum.gartz.com.br\">http://curriculum.gartz.com.br</a>",
 	),
