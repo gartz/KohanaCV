@@ -22,4 +22,4 @@ Remove the `application` folder then type:
 
     git clone https://github.com/gartz/KohanaCV.git application
     
-Modify the config files to your own configuration, and the `html/static/stackoverflow.php` for your own or remove-it.
+Modify the config files to your own configuration, and the view `html/static/stackoverflow.php` for your own or remove it.
