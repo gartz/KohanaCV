@@ -78,7 +78,7 @@ return array(
 		"Other Programming Languages: RegExp, Ruby, Perl, ASP, Java, C# (Basic), C (Basic), C++ (Basic), and some other",
 		"Tools That I Like: Git, VIM, NodeJS, nginx, Redmine, Cloud9 IDE and Jenkins",
 		"Good knowledge of Hardwares and Infrastructures",
-		"Published Projects: <a href=\"https://chrome.google.com/webstore/detail/facebook-lost-videos/jjdchiobmafebgkenhichjefeeejakil\">Facebook Lost Videos</a> (<a href=\"https://github.com/gartz/chrome-fbvideo\">source code</a>), <a href=\"https://github.com/gartz/html\">HTML Plugin for RequireJS</a>, <a href=\"http://www.youtube.com/playlist?list=PL3MFHRKPiYXDmrBKT_Xxp803xuCy5NvjG\">Usability videos</a>",
+		"Published Projects: <a href=\"https://github.com/gartz/draughtsjs\">DraguhtsJS</a>, <a href=\"https://chrome.google.com/webstore/detail/facebook-lost-videos/jjdchiobmafebgkenhichjefeeejakil\">Facebook Lost Videos</a> (<a href=\"https://github.com/gartz/chrome-fbvideo\">source code</a>), <a href=\"https://github.com/gartz/html\">HTML Plugin for RequireJS</a>, <a href=\"https://github.com/gartz/requirejs-link\">Link Plugin for RequireJS</a>, <a href=\"https://github.com/gartz/KohanaCV\">KohanaCV</a> and <a href=\"http://www.youtube.com/playlist?list=PL3MFHRKPiYXDmrBKT_Xxp803xuCy5NvjG\">About usability videos</a>",
 		"Personal BLOG (pt-br): <a href=\"http://gartz.com.br\">http://gartz.com.br</a>",
 		"OpenSource projects: <a href=\"https://github.com/gartz\">https://github.com/gartz</a>",
 		"Online CV - Resume: <a href=\"http://curriculum.gartz.com.br\">http://curriculum.gartz.com.br</a>",
