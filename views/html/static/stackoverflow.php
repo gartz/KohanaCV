@@ -1,0 +1,1 @@
+<a class="stackoverflow" href="http://stackexchange.com/users/284750/gabriel-gartz"><img src="http://stackexchange.com/users/flair/284750.png" width="208" height="58" alt="profile for Gabriel Gartz on Stack Exchange, a network of free, community-driven Q&amp;A sites" title="profile for Gabriel Gartz on Stack Exchange, a network of free, community-driven Q&amp;A sites" /></a>
