@@ -5,13 +5,13 @@ return array(
 		"url"   => "",
 		"buttons" => array(
 			array(
-				"label"  => "Overview",
-				"url"    => "http://projetos.gartz.com.br/projects/curriculum",
+				"label"  => "Personal Blog",
+				"url"    => "http://gartz.com.br",
 				"target" => "_blank",
 			),
 			array(
-				"label"  => "Roadmap",
-				"url"    => "http://projetos.gartz.com.br/projects/curriculum/roadmap",
+				"label"  => "Source Code",
+				"url"    => "https://github.com/gartz/KohanaCV",
 				"target" => "_blank",
 			),
 		)
