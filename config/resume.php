@@ -11,7 +11,7 @@ return array(
 		"google_analytics_domain"  => "gartz.com.br"        // See your configurations in google analytics website
 	),
 	"author" => "Gabriel Reitz Giannattasio",
-	"last_update" => "2013/2",
+	"last_update" => "2014/1",
 	"informations" => array(
 		"Marital status: Single",
 		"Date of birth: 08/03/1986 – ".date_diff(date_create('1986-08-03'), date_create("now"))->format('%y yeas old'), //TODO: auto calculate years
@@ -22,11 +22,11 @@ return array(
 		"For knowledge, I'm available to travel, have good logic and easy assimilation.",
 	),
 	"about_me" => array(
-		"text" => "“I'm looking for a fixer-upper with a solid foundation. Am willing to tear down walls, build bridges, and light fires. I have great experience, lots of energy, a bit of that 'vision thing' and I'm not afraid to start from the beginning.”",
-		"author" => "- Steve Jobs",
+		"text" => "“I'm passionate for programming. If there is something that looks like easy for the end user, that need complex programming tasks to be done, there where I'm proud to say that I've done something that matters.”",
+		"author" => "- Gabriel R. Giannattasio",
 	),
 	"educations" => array(
-		"Studying Analysis and Development – SENAI",
+		"Studying Analysis and Development – SENAI (07/2009 > 12/2014)",
 		"Acquire the second star in 5 Stars MSDN Developer certificate",
 	),
 	"languages" => array(
