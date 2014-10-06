@@ -16,9 +16,9 @@ return array(
 		"Marital status: Single",
 		"Date of birth: 08/03/1986 – ".date_diff(date_create('1986-08-03'), date_create("now"))->format('%y yeas old'), //TODO: auto calculate years
 		"Birthplace: Florianópolis - SC - Brazil",
-		"Residence: Itacorubi – Florianópolis - SC - Brazil",
+		"Residence: Lyon Street – San Francisco - CA - USA",
 		"Email/gtalk: gabriel@loadin.com.br",
-		"Phone #: +55 (48) 8415-3555",
+		"Phone #: +1 (415) -7708475",
 		"For knowledge, I'm available to travel, have good logic and easy assimilation.",
 	),
 	"about_me" => array(
@@ -36,9 +36,15 @@ return array(
 	),
 	"experiences" => array(
 		array(
+			"company"     => "Expensify",
+			"position"    => "Software Engineer",
+			"year"        => "2014 - current",
+			"description" => "Full stack developer, Javascript, PHP, Python and SQL",
+		),
+		array(
 			"company"     => "Cianet",
 			"position"    => "Programmer",
-			"year"        => "2011 - current",
+			"year"        => "2011 - 2014",
 			"description" => "Cianet is an industrial company that provides full-service solutions focused on internet, voice-over-ip, and tv streaming providers. My job is in the research and development sector, and am responsable for the Frontend of project IPTV, Helber (the project leader) has called me in the beggining to work on all development areas, like backend (shellscript, daemons, some C and C++ application customizes), middleware (python with django framework, running over nginx with push-stream support), and frontend, fully javascript focused in webkit from QT3 to 4, past a year I became leader of the frontend team, and responsable for software engeneer, analysys and team trainning. We work with most advanced features broth by HTML5, and even some drafts from W3C supported by webkit. We also use almost all features from ECMAScript. Our minifiers and other tasks are all using fully JS, supported by node.js in development enviroment. Our researchs are contributing with opensource community, we adopt, adapt and sometimes fixed (and push it back) projects from Github.com. It's a huge project maintained by a very experienced team.",
 		),
 		array(
